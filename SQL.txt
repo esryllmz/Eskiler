@@ -1,0 +1,44 @@
+Personelid
+Ad
+Soyad
+Şehir
+Maaş
+Durum
+Meslek
+************
+*bit->mantıksal(0/1 & T/F)
+*char->sabit uzunluklu veriler(tc,tel no...)
+*decimal->ondalıklı sayılar
+*float->ondalıklı sayılar(decimalden daha küçük sayı aralığı)
+*int->tam sayılar
+*smalldatetime->tarih-zaman formatı
+*smallint->(+-32 bin)
+*tinyint->(0-255)
+*varchar->değişken uzunluklu
+************
+DML
+-Select(Seç Listele)
+-İnsert(Ekle)
+-Delete(Sil)
+-Update(Güncelle)
+*************
+*--->Tümünü
+From--->den dan
+Query--->Sorgu
+*************
+where
+-And
+-Or
+- <= / >= / ==
+-' içine yazılır'
+-------------------------
+insert into tabloadı (sütunadları) values (parametreler)
+Executenonquery=Sorguyu çalıştır
+Ekle-Sil-Güncelle de kullanılır.
+Update TabloAdı Set Alan1=@a1, Alan2=@a2
+------------------------------
+Count=Sayaç
+Sum=Toplam Değeri
+Avg=Ortalama
+//////////////////////////
+SqlDataReader=Veri Okuyucu

@@ -1,0 +1,123 @@
+Klasör Oluştur!!!!!!
+! tab
+<br> ENTER
+---------------------
+sıralı liste-> ol / elemanlar->li
+Type:1,A,I,,a,i
+////////////////////////
+sırasız liste-> ul / elemanlar->li 
+Type:disc,circle,square (ul içine yazılır)
+Type:none->işaretsiz liste
+*********************
+Tablo oluşturma(<table>)
+Satır(<tr>)
+Sütun(<td>)
+Satırlar içine sütunler
+--------------------------
+*Tabloya Çerçeve Ekleme
+<table border=1,2,3,4.....>
+
+*Tabloya Genişlik Verme
+<table width=20%,50%...>
+
+*Tabloyu Ortalama
+<table align=center>
+
+*Tablo Hücre Birleştirme
+<td rowspan=2,3,4,5....>(satur)
+<td colspan="2","3".......>(sütun)
+
+*Başlık Sütunu
+<tr> içine <th> ekleyerek
+
+*Satır İçi Ortalama
+<tr align=center>
+
+*Hücreler Arası Boşluk Ayarı
+<table cellspacing=0>
+
+----------------------------
+Resim Ekleme
+Resim Kaynağı=<img src:" ">
+Resim Açılmadığında=<img alt:"Kelime Tanımı">
+Resim Genişliği=<img width=20%,60%....>
+Resim Yüksekliği=<img height=30%,80%...>
+Pc den Resim Çekme=<img src:". . /.jpg">
+Web den Resim Çekme=<img src:" Web linki">
+--------------------------------
+Arka Plan Resmi Değiştirme
+<body background="resim">(css de yapmak daha mantıklı)
+Arka Plan Rengi Değiştirme
+<body bgcolor=#111111>
+------------------------------------
+Link Ekleme
+<a href="https://www.aaaa.com.tr">Tıklayınız</a>(Aynı Sayfa İçerisinde)
+<a href="https://www.aaaa.com.tr" target="_blank">Tıkla</a>(Farklı Sayfa İçerisinde)
+<a href="https://www.aaaa.com.tr" (isteğe bağlı target="_blank")> <img src="resim/a.jpg" alt=" " width=150 ></a>(Resme Tıklayınca linke götürme)
+----------------------------------------
+Form Elemanları 
+
+<form action=" ">  <input type="text,password,email,radio,checkbox"> </form>  ()               
+*type="radio" name="medeni">Evli
+*type="radio" name="medeni" checked>Bekar(Sayfa açıldığında işaretli)
+*<input type="checked">Seçeneklerin adı
+
+<textarea></textarea>
+-satır sayısı:rows -sütun sayısı: cols
+
+<select> <option value=" ">sırayla açılacak satırları alt alta yaz</option   </select>(Açılır Liste)
+-value: Veri tabanına gidecek olan değer.
+-selected: Yazılı değer seçili gelecek
+(<option selected>a) olunca a değeri seçili gelecek
+
+<select multiple> <option value=" ">sırayla açılacak satırları alt alta yaz</option   </select>( Açık Listede Çoklu Seçim)
+
+<input type="reset" value="Temizle"(kutucuğun üstündeki yazıyı değiştirmek için)>(form içinde iken çalışır değerleri sıfırlar)
+
+<input type="submit" value=Yolla> (Gönder kutucuğu)
+Bazı bilgileri girmeyi zorunlu kılmak için form elemanın type bilgisinin yanına required yazılır.
+
+Kutu içine açıklama için type yanına placeholder="Açıklama.." şeklinde yazılır.
+-----------------------------------
+Siteye Başka Sitenin İçeriklerini Gömmek(iframe)
+
+<iframe src=" web adresi" width="200" height="500">
+Video eklemek için yerleştirme kodunu almak lazım.Videonun üzerinde sağ tuş.
+Kendi yazdığın web siteyi de çekebilirsin src ile.
+
+-----------------------------------
+Harita ekleme(iframe ile)
+
+Google maps ile istediğin alanda
+Paylaş-Harita Yerleştirme-kodu kopyala yapıştır
+------------------------------------
+Semantik Etiketler
+Daha ulaşılabilir olur.Anlamsal değer kazanır.
+<header> başlık alanı
+<h1>
+<footer>
+<section>bağımsız bölüm
+<article>makale gibi içerik paylaşımı
+<time>zamansal ifadeler
+<mark>işaretlenmiş içerik
+<nav>menü içerikleri
+-------------------------------
+Blok Etiketler(Etiket bulundurmak için)
+<div>
+<p>
+<b>
+İnline Etiketi(Metin bulundurmak için)
+<span>
+
+
+
+
+
+
+
+
+
+
+
+
+ 

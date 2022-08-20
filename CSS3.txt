@@ -1,0 +1,205 @@
+CSS3
+
+Çeşitleri: Dahili-Harici-Inline
+
+<head> kısmına <style> içinde tanımlama->dahili
+etiketin içine özellik tanımlama->ınline
+
+.css klasörü oluşturarak tanımlama->harici
+<head> kısmında <link> tanımlaman gerekir.(href:"style.css")
+
+***<style> #idadı {color,vb} özellik tanımlanır. 
+
+*ortak biçimsel özelliklerinde class kullanılır.
+
+*id ve class etiket içine yazılır.id tekli,class çoklu kontrol.
+
+***<style> .classadı {color,vb} özellik tanımlanır. 
+
+birden çok class kullanılabilir. iki class adı yan yana yazılarak tanımlanır.class="kutu deger" hem kutu hem deger clası oluştu.
+
+border:çerçeve
+solid:düz çizgi
+
+*{ tüm etiketleri kapsar
+
+Attribute Selectors[]
+
+a[target] ->a etiketlerinden target özelliği olanlara
+
+https ile başlayanlara özellik tanımlama
+a[href^="https"]
+
+.net ile bitenlere özellik tanımlama
+a[href$="net"]
+
+harf/kelime bazlı arama
+a[title*="do"]
+
+eksiz/bitişik yazılmamış kelime arama
+a[class|="yeni" ]
+p[title~="bahar"]
+
+Bir etiket içerisindeki belirli bir parçaya müdahale etmek için Pseudo Elementleri kullanırız
+*p::first-letter ->ilk harfe müdahele
+*p.classadı::first-letter  ->ilk harfe müdahale
+*p::first-line->ilk satıra müdahale
+*p::after->p nin sonuna (eleman oluşturma vb.)
+*p::before->p nin başına
+
+Bir elemanın altındaki elemanlara müdahale etmek için Pseudo Class kullanırız
+*ul li:first-child->ilk elemanı
+*ul li:last-child->son elemanı
+*ul li:nth-child(3)->üçüncü elemanı
+*ul li:nth-child(odd)->(1,3,5....) elemanları
+*ul li:nth-child(even)->(2,4,6.....) elemanları 
+
+a:link=tıklanmamış link özelliği,
+a:hover=mouse ile üzerine gelince,
+a:active=bir kere tıklandığında,
+a:visited=tıklanmış linkte ne olacağını belirtir.
+
+Tablo Biçimlendirme
+
+<table>
+   <tr>
+      <th>Adı</th>
+      <th>Soyadı</th>
+      <th>Şehir</th>
+    </tr>
+
+    <tr>
+      <td>Esra</th>
+      <td>Yılmaz</th>
+      <td>Erzurum</th>
+    </tr>
+
+ </table>
+    
+Çerçeve (Boşluksuz)
+
+table{border-collapse;
+td,th{border:1px solid black
+tr:nth-child(odd){->tek sayılılara özellikler
+*padding->sağdan-soldan-yukarıdan-aşağıdan boşluk
+tr:hover-> tr lerin üzerine gelince
+
+Resim İçin Float Kullanımı
+
+Resimin yanına yazı yazdırma
+<style>
+   img{
+      float:left;
+---------------------------
+overflow:auto->çerçeve de taşma olmaması için
+
+clear:both->floatlar  arası set
+**********************************
+Position:Konumlandırma
+
+yukarıdan->top
+soldan->left
+sağdan->right
+aşağıdan->bottom
+
+*Static:Varsayılan
+*Relative:Akışı Bozmaz.Dört taraftan ayar
+*Absolute:Akışı Bozar.Dört taraftan ayar.Konumlandırılmış etiketler olduğunda akış bozmaz.
+*Sticky:Ekrana yapışıyor.Sabit Kalıyor.
+*Fixed:Başa Dön,Yukarı Çık gibi.Stickye benziyor ama ekrana yapışmıyor.
+
+Margin:Dış Boşluk
+Dört Bir Taraftan Boşluk
+Dört taraftan eşit boşluk için:20px;
+Farklı boşluk:10px 20px 30px 40px
+Yukarı-Sağ-Aşağı-Sol
+
+Üçlü Kullanım:10px 20px 15px
+Yukarı-(Sol-Sağ)-Aşağı
+
+İkili Kullanın:10px 30px
+(Yukarı-Aşağı)-(Sağ-Sol)
+
+Margin-top:10px->sadece yukarı
+Margin-right:10px->sadece sağ
+Margin-bottom:10px->sadece aşağı
+Margin-left:10px->sadece sol
+*******************************************
+
+Padding(İç Boşluk)
+İçeriğe uygulanır.
+Margin gibi farklı kullanımları var.
+
+Genişlik ve Yüksekliği Sabit Tutma
+box-sizing:border-box
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

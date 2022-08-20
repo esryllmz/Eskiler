@@ -1,0 +1,38 @@
+p[title] {
+    border: 1px solid gray;
+    padding: 5px;
+
+}
+
+p[title="third paragraph"] {
+    background-color: darkgoldenrod;
+}
+
+p[title ~ ="forth"] {
+    background-color: red;
+}
+
+a[href^=https] {
+    color: aqua;
+}
+
+a[href $=com] {
+    color: firebrick;
+}
+
+a[href="https://www.example.net"][target="_blank"] {
+    color: fuchsia;
+}
+
+input[type=text] {
+    background-color: red;
+    width: 150px;
+    display: block;
+}
+
+input[type=button] {
+    background-color:firebrick;
+    color: white;
+    padding: 8px 16px;
+
+}
